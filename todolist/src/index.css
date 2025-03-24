@@ -1,0 +1,294 @@
+/* General App Styling */
+.app-container {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Task Input */
+.task-input-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-input-container input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.task-input-container input:focus {
+  border-color: #007bff;
+}
+
+.task-input-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.task-input-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.task-list span {
+  flex: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* Delete Button */
+.task-list button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.task-list button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app-container {
+    max-width: 90%;
+  }
+
+  .task-input-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .task-input-container input {
+    width: 100%;
+  }
+
+  .task-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .task-list button {
+    align-self: flex-end;
+  }
+}
+@media (max-width: 600px) {
+  /* Center app and adjust width */
+  .app-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  /* Stack input & button vertically */
+  .task-input-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .task-input-container input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .task-input-container button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Adjust task list for better readability */
+  .task-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .task-list button {
+    align-self: flex-end;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+}
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.login-container input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+.login-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* General Dark Mode Styling */
+.dark-mode {
+  background-color: #121212; /* Deep black background */
+  color: #ffffff; /* White text for contrast */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+/* Container */
+.dark-mode .app-container {
+  background: #1e1e1e; /* Dark gray card background */
+  color: #e0e0e0;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1); /* Subtle glow effect */
+}
+
+/* Title */
+.dark-mode h1 {
+  color: #f8f8f8; /* Brighter text */
+  font-weight: bold;
+}
+
+/* Input Field */
+.dark-mode input {
+  background: #333; /* Dark background */
+  border: 2px solid #444;
+  color: #fff;
+}
+
+.dark-mode input::placeholder {
+  color: #bbb;
+}
+
+.dark-mode input:focus {
+  border-color: #007bff; /* Blue border on focus */
+}
+
+/* Task List */
+.dark-mode .task-list li {
+  background: #252525; /* Darker background */
+  color: #e0e0e0;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons */
+.dark-mode button {
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Blue gradient */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.dark-mode button:hover {
+  background: linear-gradient(135deg, #0056b3, #003c80);
+}
+
+/* Delete Button */
+.dark-mode .delete-btn {
+  background: linear-gradient(135deg, #dc3545, #a71d2a);
+}
+
+.dark-mode .delete-btn:hover {
+  background: linear-gradient(135deg, #a71d2a, #80151f);
+}
+
+/* Toggle Button */
+.toggle-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+.toggle-btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .dark-mode .app-container {
+    max-width: 90%;
+  }
+
+  .dark-mode .task-list li {
+    flex-direction: column;
+    gap: 8px;
+  }
+} 
+body{
+  background-color: rgb(87, 86, 86);
+}
