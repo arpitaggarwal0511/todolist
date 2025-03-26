@@ -11,7 +11,6 @@
   text-align: center;
   font-family: 'Poppins', sans-serif;
   position: relative; /* This is to ensure footer positioning works */
-  margin-bottom: 10%;
 }
 
 h1 {
