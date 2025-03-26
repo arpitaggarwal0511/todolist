@@ -1,13 +1,17 @@
 /* General App Styling */
 .app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Full height of the viewport */
   max-width: 450px;
-  margin: 50px auto;
   padding: 20px;
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  position: relative; /* This is to ensure footer positioning works */
+  margin-bottom: 10%;
 }
 
 h1 {
@@ -258,7 +262,7 @@ h1 {
 }
 
 .dark-mode .delete-btn:hover {
-  background: linear-gradient(135deg, #a71d2a, #80151f);
+  background: #c82333;
 }
 
 /* Toggle Button */
@@ -291,4 +295,30 @@ h1 {
 }
 body{
   background-color: rgb(87, 86, 86);
+}
+.footermain {
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Make footer span full width */
+  background-color: #333; /* You can change this color */
+  padding: 20px 0; /* Add some padding */
+  margin: 0; /* Remove any margin that may cause offset */
+}
+.links{
+  padding: 20px;
+
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 1%;
+
+
+}
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
 }
